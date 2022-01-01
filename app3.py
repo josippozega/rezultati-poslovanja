@@ -59,15 +59,6 @@ bar_chart = px.bar(df_grouped,
                    template= 'plotly_white')
 st.plotly_chart(bar_chart)
 
-# --- DISPLAY IMAGE & DATAFRAME
-col1, col2 = st.columns(2)
-image = Image.open('survey.jpg')
-print(image)
-col1.image(image,
-        caption='Josip Požega',
-        use_column_width=True)
-col2.dataframe(df[mask])
-
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
