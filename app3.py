@@ -12,18 +12,6 @@ st.write("""
 ***
 """)
 
-# --- DISPLAY IMAGE & DATAFRAME
-
-col1, col2 = st.columns(2)
-image = Image.open('purchasing.jpg')
-print(image)
-col1.image(image,
-        caption='Designed by Josip Požega',
-        use_column_width=True)
-col2.dataframe(df[mask])
-
-### --- UČITAVANJE DATAFRAMEA (IZVORA PODATAKA)
-
 ### --- LOAD DATAFRAME
 excel_file = 'Survey_Results.xlsx'
 sheet_name = 'DATA'
