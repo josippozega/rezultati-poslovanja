@@ -14,7 +14,7 @@ st.write("""
 
 # --- DISPLAY IMAGE & DATAFRAME
 
-col1, col2 = st.columns(2)
+col1= st.columns(1)
 image = Image.open('purchasing.jpg')
 print(image)
 col1.image(image,
