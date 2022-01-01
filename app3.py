@@ -12,6 +12,9 @@ st.write("""
 ***
 """)
 
+myImage = Image.open("survey.jpg");
+myImage.show();
+
 ### --- LOAD DATAFRAME
 excel_file = 'Survey_Results.xlsx'
 sheet_name = 'DATA'
