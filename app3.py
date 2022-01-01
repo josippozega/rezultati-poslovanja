@@ -14,12 +14,13 @@ st.write("""
 
 # --- DISPLAY IMAGE & DATAFRAME
 
-col1= st.columns(1)
+col1, col2 = st.columns(2)
 image = Image.open('purchasing.jpg')
 print(image)
 col1.image(image,
         caption='Designed by Josip Požega',
         use_column_width=True)
+col2.dataframe(df[mask])
 
 ### --- UČITAVANJE DATAFRAMEA (IZVORA PODATAKA)
 
@@ -72,10 +73,10 @@ st.plotly_chart(bar_chart)
 
 # --- DISPLAY IMAGE & DATAFRAME
 col1, col2 = st.columns(2)
-image = Image.open('images/survey.jpg')
+image = Image.open('survey.jpg')
 print(image)
 col1.image(image,
-        caption='Designed by slidesgo / Freepik',
+        caption='Josip Požega',
         use_column_width=True)
 col2.dataframe(df[mask])
 
